@@ -679,14 +679,24 @@ button {
   }
 }
 
-@media (max-width: 1024px) {
+@media (min-width: 1024px) {
   /* Aquí centramos las secciones, mediantes nuestras clases reutilizables */
   .section--title,
-  .container {
+  .container, .main.main {
     margin: 0 auto;
   }
+  .navbar_container_pro{
+    /* border: 2px solid green; */
+    background-color: #F8F8F8;
+    width: 100%;
+    height: 75px;
+    /* height: var(--header-height); */
+  }
+  #navbar {
+    padding-left: 20em;
+  }
+  }
 
-}
 
 
   /* DARK MODE */
