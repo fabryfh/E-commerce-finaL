@@ -189,6 +189,7 @@ button {
 
 /* ======= HEADER ======== */
 .header {
+  /* border: 2px solid rgb(6, 6, 255); */
   position: fixed;
   bottom: 0;
   left: 0;
@@ -203,11 +204,14 @@ button {
 }
 
 .nav {
+  /* border: 2px solid red; */
   width: 100%;
   height: var(--header-height);
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin: 0;
+  /* margin-bottom: 3em; */
 }
 
 .nav__logo {
@@ -255,6 +259,9 @@ button {
     background-color: var(--bg-color);
     z-index: var(--z-fixed);
     transition: left .5s ease-in-out;
+  }
+  .main {
+    padding-top: 4em;
   }
 }
 
@@ -660,7 +667,7 @@ button {
   }
 
   .main {
-    padding-top: var(--header-height);
+    padding-top: 3em;
   }
 
   .product__title {
@@ -672,12 +679,13 @@ button {
   }
 }
 
-@media (min-width: 1024px) {
+@media (max-width: 1024px) {
   /* Aquí centramos las secciones, mediantes nuestras clases reutilizables */
   .section--title,
   .container {
     margin: 0 auto;
   }
+
 }
 
 
